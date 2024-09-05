@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #00bfa6;
+}
+
+.quote-btn {
+    border: solid 1px #000000;
+    padding: 10px 20px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover {
+    background-color: #ffa000;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    margin: 50px;
+    background-color: #fff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #161818;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #009688;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+   
+    justify-content: space-between;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+    margin-top: 20px;
+}
+
+footer .partners img {
+    margin: 0 10px;
+    height: 50px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+footer .partners img:hover {
+    transform: scale(1.1);
+}
+
+.sec{
+    display: flex;
+    margin: 50px;
+}
+.ser{
+    background: rgb(81, 199, 81);
+    margin: 0px 20px;
+    padding: 5px;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.card1 {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 48%;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.card2 {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 48%;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(81, 199, 81);
+    
+}
+
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.username {
+    display: inline-block;
+    background-color: #ff00ff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.learn-more {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.learn-more span {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.accordion {
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.accordion-item {
+ 
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.accordion-label {
+    display: flex;
+    
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-label:hover {
+    background-color: #eaeaea;
+}
+
+.accordion-label .number {
+    color: #000;
+    margin-right: 10px;
+}
+
+.accordion-content {
+    padding: 20px;
+    background-color: #e8ffe3;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    display: block;
+}
+
+input[type="checkbox"] ~ .accordion-content {
+    display: none;
+}
+
+#item1:checked + .accordion-label {
+    background-color: #b0ff9f;
+}
+
+#item1:checked + .accordion-label:hover {
+    background-color: #a8f594;
+}
+
+
+
+
+/* Responsive Design for Tablet and Mobile */
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .sec {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+        margin: 20px;
+    }
+
+    .cta-btn {
+        padding: 12px 24px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card1,
+    .card2 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .quote-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    footer .partners img {
+        height: 40px;
+    }
+}
